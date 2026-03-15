@@ -62,7 +62,7 @@
 
 ## 9. 收尾與全局整合
 
-- [ ] 9.1 更新 `doc_v2/_index.md` 頂層索引，確保所有文件均有連結
-- [ ] 9.2 建立 `doc_v2/diagrams/` 全局架構總覽圖（SystemC 整體子系統關聯）
-- [ ] 9.3 最終檢查：確認所有 Mermaid 圖表可在 GitHub 渲染、所有連結有效
-- [ ] 9.4 Final commit 並 push
+- [x] 9.1 更新 `doc_v2/_index.md` 頂層索引，確保所有文件均有連結
+- [x] 9.2 建立 `doc_v2/diagrams/` 全局架構總覽圖（SystemC 整體子系統關聯）
+- [x] 9.3 最終檢查：確認所有 Mermaid 圖表可在 GitHub 渲染、所有連結有效
+- [x] 9.4 Final commit 並 push
