@@ -16,13 +16,13 @@
 - [x] 3.1 建立 `doc_v2/code/sysc/communication/` 目錄與 `_index.md`
 - [x] 3.2 為 `ref/systemc/src/sysc/communication/` 下每個檔案產出對應文件
 - [x] 3.3 為 communication 子系統建立依賴關係圖
-- [ ] 3.4 Commit 並 push P2
+- [x] 3.4 Commit 並 push P2
 
 ## 4. P3 - Datatypes 子系統（Bottom-up）
 
-- [ ] 4.1 建立 `doc_v2/code/sysc/datatypes/` 目錄與 `_index.md`
-- [ ] 4.2 為 `ref/systemc/src/sysc/datatypes/` 下每個檔案產出對應文件
-- [ ] 4.3 為 datatypes 子系統建立依賴關係圖
+- [x] 4.1 建立 `doc_v2/code/sysc/datatypes/` 目錄與 `_index.md`
+- [x] 4.2 為 `ref/systemc/src/sysc/datatypes/` 下每個檔案產出對應文件
+- [x] 4.3 為 datatypes 子系統建立依賴關係圖
 - [ ] 4.4 Commit 並 push P3
 
 ## 5. P4 - Tracing 子系統（Bottom-up）
