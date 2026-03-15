@@ -23,27 +23,27 @@
 - [x] 4.1 建立 `doc_v2/code/sysc/datatypes/` 目錄與 `_index.md`
 - [x] 4.2 為 `ref/systemc/src/sysc/datatypes/` 下每個檔案產出對應文件
 - [x] 4.3 為 datatypes 子系統建立依賴關係圖
-- [ ] 4.4 Commit 並 push P3
+- [x] 4.4 Commit 並 push P3
 
 ## 5. P4 - Tracing 子系統（Bottom-up）
 
-- [ ] 5.1 建立 `doc_v2/code/sysc/tracing/` 目錄與 `_index.md`
-- [ ] 5.2 為 `ref/systemc/src/sysc/tracing/` 下每個檔案產出對應文件
-- [ ] 5.3 為 tracing 子系統建立依賴關係圖
-- [ ] 5.4 Commit 並 push P4
+- [x] 5.1 建立 `doc_v2/code/sysc/tracing/` 目錄與 `_index.md`
+- [x] 5.2 為 `ref/systemc/src/sysc/tracing/` 下每個檔案產出對應文件
+- [x] 5.3 為 tracing 子系統建立依賴關係圖
+- [x] 5.4 Commit 並 push P4
 
 ## 6. P5 - Utils 與 Packages（Bottom-up）
 
-- [ ] 6.1 建立 `doc_v2/code/sysc/utils/` 與 `doc_v2/code/sysc/packages/` 目錄與 `_index.md`
-- [ ] 6.2 為 utils 與 packages 下每個檔案產出對應文件
-- [ ] 6.3 Commit 並 push P5
+- [x] 6.1 建立 `doc_v2/code/sysc/utils/` 與 `doc_v2/code/sysc/packages/` 目錄與 `_index.md`
+- [x] 6.2 為 utils 與 packages 下每個檔案產出對應文件
+- [x] 6.3 Commit 並 push P5
 
 ## 7. P6 - TLM（Bottom-up）
 
-- [ ] 7.1 建立 `doc_v2/code/tlm_core/` 與 `doc_v2/code/tlm_utils/` 目錄與 `_index.md`
-- [ ] 7.2 為 `ref/systemc/src/tlm_core/` 與 `tlm_utils/` 下每個檔案產出對應文件
-- [ ] 7.3 為 TLM 子系統建立依賴關係圖
-- [ ] 7.4 Commit 並 push P6
+- [x] 7.1 建立 `doc_v2/code/tlm_core/` 與 `doc_v2/code/tlm_utils/` 目錄與 `_index.md`
+- [x] 7.2 為 `ref/systemc/src/tlm_core/` 與 `tlm_utils/` 下每個檔案產出對應文件
+- [x] 7.3 為 TLM 子系統建立依賴關係圖
+- [x] 7.4 Commit 並 push P6
 
 ## 8. P7 - Top-down 概念架構文件
 
