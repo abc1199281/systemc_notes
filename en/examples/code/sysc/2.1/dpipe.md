@@ -77,8 +77,8 @@ classDiagram
         -extract() void
     }
 
-    Writer -->|"via sc_export"| dpipe : write
-    dpipe -->|"via sc_export"| Reader : read
+    Writer --> dpipe : writes via sc_export
+    dpipe --> Reader : reads via sc_export
 ```
 
 ## Code Analysis
