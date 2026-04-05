@@ -67,7 +67,7 @@ classDiagram
     sc_signed_bitref_r <|-- sc_signed_bitref
     sc_value_base <|-- sc_signed_subref_r
     sc_signed_subref_r <|-- sc_signed_subref
-    sc_signed <|-- sc_bigint_W["sc_bigint&lt;W&gt;"]
+    sc_signed <|-- sc_bigint~W~
 ```
 
 ## 核心概念

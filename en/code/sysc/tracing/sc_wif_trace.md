@@ -107,8 +107,8 @@ Same template structure as VCD -- holds a const reference to the traced object a
 flowchart LR
     subgraph VCD
         direction TB
-        V1["Code system: ! \" # ..."]
-        V2["Value format: 1! or b1010 \""]
+        V1["Code system: ! #quot; # ..."]
+        V2["Value format: 1! or b1010 #quot;"]
         V3["Timestamp: #100"]
         V4["Extension: .vcd"]
         V5["Open standard"]

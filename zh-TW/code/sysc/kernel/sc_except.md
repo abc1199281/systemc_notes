@@ -176,7 +176,7 @@ sequenceDiagram
     alt User catches and re-throws
         Thread->>Thread: catch(sc_unwind_exception& e)
         Thread->>Thread: cleanup...
-        Thread->>Thread: throw; (re-throw)
+        Thread->>Thread: throw (re-throw)
     else User catches and swallows (BUG!)
         Thread->>UE: ~sc_unwind_exception()
         UE->>UE: FATAL ERROR! active() == true

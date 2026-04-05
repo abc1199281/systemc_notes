@@ -39,7 +39,7 @@ classDiagram
     }
 
     sc_value_base <|-- sc_unsigned
-    sc_unsigned <|-- sc_biguint_W["sc_biguint&lt;W&gt;"]
+    sc_unsigned <|-- sc_biguint~W~
 ```
 
 ## 核心概念

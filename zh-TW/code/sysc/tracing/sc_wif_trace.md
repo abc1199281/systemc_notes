@@ -107,8 +107,8 @@ public:
 flowchart LR
     subgraph VCD
         direction TB
-        V1["代號系統：! \" # ..."]
-        V2["值格式：1! 或 b1010 \""]
+        V1["代號系統：! #quot; # ..."]
+        V2["值格式：1! 或 b1010 #quot;"]
         V3["時間戳：#100"]
         V4["副檔名：.vcd"]
         V5["開放標準"]

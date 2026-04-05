@@ -76,7 +76,7 @@ static sc_unbound_impl const sc_unbound = {};
 
 ```cpp
 template <typename T>
-operator sc_signal_inout_if<T>&() const
+operator sc_signal_inout_if~T~&() const
 {
     sc_stub<T>* stub = new sc_stub<T>(sc_gen_unique_name("sc_unbound"));
     sc_get_curr_simcontext()->get_stub_registry()->insert(...);
@@ -113,14 +113,14 @@ sc_stub<T>* stub = new sc_stub<T>(sc_gen_unique_name("sc_tie::value"), val);
 ```mermaid
 graph TD
     subgraph "sc_unbound 使用流程"
-        UB["port(sc_unbound)"] --> TC["型別轉換<br/>operator sc_signal_inout_if<T>&()"]
-        TC --> NEW1["new sc_stub<T>(\"sc_unbound_0\")"]
+        UB["port(sc_unbound)"] --> TC["型別轉換<br/>operator sc_signal_inout_if~T~&()"]
+        TC --> NEW1["new sc_stub~T~(sc_unbound_0)"]
         NEW1 --> REG1["註冊到 stub_registry"]
         REG1 --> BIND1["綁定完成"]
     end
     subgraph "sc_tie::value 使用流程"
         TV["port(sc_tie::value(42))"] --> FN["sc_tie::value(42)"]
-        FN --> NEW2["new sc_stub<T>(\"sc_tie::value_0\", 42)"]
+        FN --> NEW2["new sc_stub~T~(sc_tie::value_0, 42)"]
         NEW2 --> REG2["註冊到 stub_registry"]
         REG2 --> BIND2["綁定完成<br/>read() 永遠回傳 42"]
     end

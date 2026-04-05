@@ -37,7 +37,8 @@ classDiagram
     sc_process_b <|-- sc_method_process
     sc_process_b <|-- sc_thread_process
     sc_thread_process <|-- sc_cthread_process
-    sc_module <|-- "User Modules"
+    sc_module <|-- UserModules
+    class UserModules["User Modules"]
 
     class sc_object {
         +name()

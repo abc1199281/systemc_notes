@@ -119,14 +119,14 @@ stateDiagram-v2
     BEGIN_REQ --> Rcved_ACCEPTED: TLM_ACCEPTED
 
     Rcved_UPDATED --> TwoPhase: BEGIN_RESP
-    Note right of TwoPhase: 2-phase: directly COMPLETED + END_RESP
+    note right of TwoPhase : 2-phase -- directly COMPLETED + END_RESP
 
     Rcved_ACCEPTED --> ThreePhase: BEGIN_RESP (skipped END_REQ)
-    Note right of ThreePhase: 3-phase: enqueue to PEQ to send END_RESP
+    note right of ThreePhase : 3-phase -- enqueue to PEQ to send END_RESP
 
     Rcved_ACCEPTED --> Rcved_END_REQ: END_REQ
     Rcved_END_REQ --> FourPhase: BEGIN_RESP
-    Note right of FourPhase: 4-phase: enqueue to PEQ to send END_RESP
+    note right of FourPhase : 4-phase -- enqueue to PEQ to send END_RESP
 ```
 
 ### Protocol Selection Logic

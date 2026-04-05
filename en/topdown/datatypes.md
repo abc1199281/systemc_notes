@@ -405,17 +405,17 @@ classDiagram
     sc_value_base <|-- sc_signed
     sc_value_base <|-- sc_unsigned
 
-    sc_int_base <|-- "sc_int<N>"
-    sc_uint_base <|-- "sc_uint<N>"
-    sc_signed <|-- "sc_bigint<N>"
-    sc_unsigned <|-- "sc_biguint<N>"
+    sc_int_base <|-- sc_int~N~
+    sc_uint_base <|-- sc_uint~N~
+    sc_signed <|-- sc_bigint~N~
+    sc_unsigned <|-- sc_biguint~N~
 
-    sc_bv_base <|-- "sc_bv<N>"
-    sc_lv_base <|-- "sc_lv<N>"
+    sc_bv_base <|-- sc_bv~N~
+    sc_lv_base <|-- sc_lv~N~
     sc_bv_base <|-- sc_lv_base : extends
 
-    sc_fxnum <|-- "sc_fixed<...>"
-    sc_fxnum <|-- "sc_ufixed<...>"
+    sc_fxnum <|-- sc_fixed~params~
+    sc_fxnum <|-- sc_ufixed~params~
 ```
 
 ---

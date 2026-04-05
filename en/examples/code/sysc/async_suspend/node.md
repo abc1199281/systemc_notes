@@ -213,7 +213,7 @@ sequenceDiagram
 
     Note over SC,M: After delay...
 
-    M->>SEM: txnSent_c++ ; notify_one()
+    M->>SEM: txnSent_c++, notify_one()
     SEM-->>OS: UNBLOCKED
     OS->>OS: Continue with next transaction
 ```

@@ -76,7 +76,7 @@ A global static object. Its magic lies in the type conversion operator:
 
 ```cpp
 template <typename T>
-operator sc_signal_inout_if<T>&() const
+operator sc_signal_inout_if~T~&() const
 {
     sc_stub<T>* stub = new sc_stub<T>(sc_gen_unique_name("sc_unbound"));
     sc_get_curr_simcontext()->get_stub_registry()->insert(...);
@@ -113,14 +113,14 @@ Similar to `sc_unbound`, but:
 ```mermaid
 graph TD
     subgraph "sc_unbound Usage Flow"
-        UB["port(sc_unbound)"] --> TC["Type conversion<br/>operator sc_signal_inout_if<T>&()"]
-        TC --> NEW1["new sc_stub<T>(\"sc_unbound_0\")"]
+        UB["port(sc_unbound)"] --> TC["Type conversion<br/>operator sc_signal_inout_if~T~&()"]
+        TC --> NEW1["new sc_stub~T~(sc_unbound_0)"]
         NEW1 --> REG1["Register with stub_registry"]
         REG1 --> BIND1["Binding complete"]
     end
     subgraph "sc_tie::value Usage Flow"
         TV["port(sc_tie::value(42))"] --> FN["sc_tie::value(42)"]
-        FN --> NEW2["new sc_stub<T>(\"sc_tie::value_0\", 42)"]
+        FN --> NEW2["new sc_stub~T~(sc_tie::value_0, 42)"]
         NEW2 --> REG2["Register with stub_registry"]
         REG2 --> BIND2["Binding complete<br/>read() always returns 42"]
     end
